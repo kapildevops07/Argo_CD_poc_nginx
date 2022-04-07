@@ -1,0 +1,17 @@
+apiVersion: v1
+data:
+  project: bmdpbnhwb2MtcHJvamVjdA==
+  type: Z2l0
+  url: aHR0cHM6Ly9naXRodWIuY29tL2thcGlsZGV2b3BzMDcvQXJnb19DRF9wb2NfbmdpbnguZ2l0
+kind: Secret
+metadata:
+  annotations:
+    managed-by: argocd.argoproj.io
+  #creationTimestamp: "2022-04-07T14:40:27Z"
+  labels:
+    argocd.argoproj.io/secret-type: repository
+  name: repo-4203070919
+  namespace: argocd
+  #resourceVersion: "1995"
+  #uid: f87584b1-8ceb-4bb2-9ee9-b151c719953d
+type: Opaque

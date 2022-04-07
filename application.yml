@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: nginxpoc
+  namespace: argocd
+spec:
+  project: nginxpoc-project
+  source:
+    repoURL: https://github.com/kapildevops07/Argo_CD_poc_nginx.git
+    targetRevision: HEAD
+    path: helm-nginx
+    helm:
+      valueFiles:
+        - ./values.yaml
+      releaseName: nginxpoc-helm-release
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
